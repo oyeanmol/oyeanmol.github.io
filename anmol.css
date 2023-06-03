@@ -1,0 +1,491 @@
+/* Anmol Shah's Portfolio Website CSS  */
+/* NEW CSS START FROM HERE */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&display=swap');
+
+:root{
+    --green: #61fdb0;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transform: all .2s linear;
+}
+
+*::selection{
+    background: #fff;
+    color: #000;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden;
+}
+
+
+html::-webkit-scrollbar{
+    width: 1rea;
+}
+
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--green);
+}
+
+
+body{
+    background: #111318;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+.btn{
+    padding: .7rem 3rem;
+    background:#3deaa4;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i{
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 36px;
+    font-weight: 500;
+    padding: 1rem;
+    border-top: 1px solid #323641;
+    color: #fff;
+}
+
+.heading span{
+    color: var(--green);
+    border-bottom: 3px solid #3deaa4;
+}
+
+
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    height: 100%;
+    width: 35rem;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+header .user .name{
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+header .user .post{
+    font-size: 2rem;
+    color:#eee;
+}
+
+
+header .navbar{
+    width: 100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background:#333;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+header .navbar ul li a:hover{
+    background-color: var(--green);
+    color: #000;
+    font-weight: bold;
+    transform: .5s;
+}
+
+
+#menu{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    color: #fff;
+    /* background-color:grey;
+    border-radius: 10%; */
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+.home{
+    display:flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+
+
+.home h1{
+    font-family: "Playfair Display", serif;
+    padding-top: 25px;
+    font-size: 60px;
+    color: white;
+}
+
+.home h1 span{
+    font-size: 60px;
+    font-family: "Playfair Display", serif;;
+    color: var(--green);
+}
+
+.home p{
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 0;
+}
+
+.frontimage {
+    /* border-radius: 30%; */
+    margin-top: 30px;
+    /* height: 250px; */
+    width: 650px;
+    /* border: 4px solid white; */
+}
+
+/* About Section */
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    color: white;
+}
+
+.about .row .sub-heading{
+    font-size: 2rem;
+}
+
+.about .row .about-text {
+    font-size: 16px;
+    padding: 0rem 3.5rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    color: #cccccc;
+}
+
+.about-text .social-links {
+    margin-top: 20px;
+}
+
+.about-text .social-links span {
+    display: inline-block;
+    margin-right: 35px;
+    margin-top: 25px;
+    color: #ccc;
+    position: relative;
+}
+
+.about-text .social-links ul {
+    display: inline-block;
+    list-style: none;
+}
+
+.about-text .social-links li {
+    display: inline-block;
+}
+
+.about-text .social-links li a {
+    color: #fff;
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 32px;
+    text-align: center;
+    position: relative;
+}
+
+.about-text .social-links span::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 15px;
+    background-color: #3deaa4;
+    right: -27px;
+    top: 13px;
+}
+
+.about-text .social-links ul li a:hover {
+    color: #3deaa4;
+}
+
+.default-btn {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 40px;
+    padding: 10px 20px;
+    background-color: #3deaa4;
+    color: #000;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.default-btn i {
+    font-size: 18px;
+    font-weight: 500;
+    position:relative;
+    top: 1px;
+    margin-right: 3px;
+}
+
+.default-btn:hover {
+    box-shadow: -4px 14px 16px -7px #3e7327;
+    background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+    background-color:#72b352;
+    text-shadow:0px 1px 0px #5b8a3c;
+}
+
+
+.about .row .about-text p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Skill Section */
+.skills .skills-container .row{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.skill-item {
+    display: inline-block;
+    color: white;
+    /* margin-bottom: 30px;æ */
+}
+
+
+.skill-item p {
+    color: #eee;
+    margin-bottom: 12px;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+.skill-itemp1 p {
+    color: #eee;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+
+
+.skill-wrap {
+    margin-bottom: 16px;
+    width: 50%;
+    margin-left: 40px;
+}
+
+.skill-wrap .skill-wrap-inner {
+    background-color: #3deaa4;
+    height: 4px;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 43px;
+}
+
+.skill-item-container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill-item-container .box {
+    width: 44rem;
+    margin: 4rem 1rem;
+    position: relative;
+    border: 1px solid #2d303b;
+}
+
+.skill-item-container .box:hover {
+    border-color: #3deaa4;
+}
+
+
+
+
+
+.project .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+
+.project .box-container .box{
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+
+.project .box-container .box h3{
+    margin-bottom: 5px;
+    font-size: 1.7rem;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+.project .box-container .box h3 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.project .box-container .box h3 a:hover {
+    color: #3deaa4;
+}
+
+.project .box-container .box p{
+    font-size: 1.4rem;
+    color: #fff;
+    padding-top: 1rem 0;
+}
+
+.project .box-container .box i{
+    position: absolute;
+    top: -1.5rem;
+    left:-2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+
+
+footer {
+    padding: 80px 0;;
+}
+
+.footer-wrapper {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.footer-wrapper .container-fluid {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.social-footer {
+    text-decoration: none;
+}
+
+.social-footer a {
+    color: #aaa;
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.social-footer a:hover {
+    color: #3deaa4;
+}
+
+.footer-copyright {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #fff;
+}
+
+
+
+
+
+
+.top {
+    position: fixed;
+    bottom: 7.5rem;
+    right: 2rem;
+    z-index: 100;
+    background-color: #3deaa4;
+    /* border-radius: 50px; */
+    display: none;
+}
+
+.top:hover{
+    background-color: var(--green);
+}
