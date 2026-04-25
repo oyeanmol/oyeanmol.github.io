@@ -17,23 +17,6 @@ import { ArrowLeft } from "lucide-react";
  *
  *   Your essay body, with `code`, **emphasis**, and so on.
  */
-const bodies: Record<string, string[]> = {
-  "the-quiet-discipline-of-idempotency": [
-    "There's a particular kind of bug that only appears when the network has had a bad day. A request times out, a client retries, the server runs the handler again — and now you have two charges, two emails, two rows where there should be one.",
-    "Idempotency is the discipline of designing handlers that don't care how many times they're called. Same input, same outcome. It is, in my experience, the single highest-leverage habit a backend engineer can build.",
-    "The trick isn't the technique — idempotency keys, deduplication tables, conditional writes are all well documented. The trick is the posture: writing every handler as if the network will betray you, because eventually it will.",
-  ],
-  "postgres-is-still-the-answer": [
-    "Most of the systems I've shipped in the last five years could have been a single Postgres instance and a few well-placed indexes. I keep relearning this lesson.",
-    "LISTEN/NOTIFY gives you pub/sub. Logical replication gives you CDC. Partial indexes give you a queue. JSONB gives you a document store. The boring database has quietly absorbed the cool stack.",
-    "Reach for Kafka when you have Kafka problems — fan-out at scale, durable replay, multi-consumer ordering. Until then, write the postgres query.",
-  ],
-  "writing-services-that-fail-well": [
-    "Reliability isn't the absence of failure. It's the presence of graceful failure modes — the parts of your system that yield, isolate, and recover so the rest can keep working.",
-    "Three habits go a long way: deadlines on every outbound call, bulkheads between dependencies, and a clear answer to the question 'what does this service do when its database is gone?'",
-    "The goal isn't a service that never fails. The goal is a service whose failure is small, contained, and obvious.",
-  ],
-};
 
 const PostPage = () => {
   const { slug = "" } = useParams();
