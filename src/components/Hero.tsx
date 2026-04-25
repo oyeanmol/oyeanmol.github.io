@@ -107,7 +107,7 @@ export const Hero = () => {
             <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
           <a
-            href="/alex-chen-resume.pdf"
+            href="/anmol-shah-resume.pdf"
             download
             className="group inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 sm:px-5 py-2.5 font-mono text-xs text-foreground transition-all hover:border-accent/40 hover:text-accent"
           >
