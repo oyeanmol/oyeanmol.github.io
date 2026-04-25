@@ -27,7 +27,7 @@ export const projects: Project[] = [
       "Designed and implemented a recruitment system using Salesforce with Apex, Flows, Triggers, and Test Classes, focusing on automation, data integrity, and scalable CRM workflows.",
     stack: ["Salesforce", "Apex", "LWC", "Flows", "Triggers"],
     status: "live",
-    href: "#",
+    href: "https://github.com/oyeanmol/salesforce-recruitment-management-system/",
   },
   {
     year: "2026",
@@ -45,7 +45,7 @@ export const projects: Project[] = [
       "A fast Multi-threaded Python Port Scanner with Nmap integration feature.",
     stack: ["Python", "Socket", "asyncio", "rhreading"],
     status: "live",
-    href: "#",
+    href: "https://github.com/oyeanmol/scanmap",
   },
 ];
 
