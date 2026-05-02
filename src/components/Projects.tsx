@@ -13,12 +13,12 @@ export interface Project {
 export const projects: Project[] = [
   {
     year: "2026",
-    title: "nivara (e-commerce platform)",
+    title: "nivara - the hyperlocal e-commerce platform",
     description:
-      "Built a scalable e-commerce application using Django, Django REST Framework, and React with PostgreSQL, integrating secure payments via PayPal and RESTful APIs for seamless client-server interaction.",
-    stack: ["Django", "DRF", "React", "PostgreSQL"],
+      "A backend-focused, production-inspired system that solves real-world inventory visibility and reservation problems for nearby retail stores.",
+    stack: ["Django", "DRF", "PostgreSQL"],
     status: "live", 
-    href: "#",
+    href: "https://github.com/oyeanmol/nivara-hyperlocal-ecommerce",
   },
   {
     year: "2026",
